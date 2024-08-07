@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="mentor.ListenerAll">
+		</listener>
+	</listeners>	
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="mentor.StudentModule">
+				<methods>
+					<include name="clickstudent" />
+					<include name="addsubmit" />
+					<include name="cancel"/>
+					<include name="editsubmit"/>
+					<include name="editcancel"/>
+					<include name="UpdateProficiency"/>
+					<include name="CancelProficiency"/>
+					<include name="Uploadsubmit"/>
+					<include name="Uploadcancel"/>
+				    <include name="archievestudent"/>
+					<include name="proficiencyfilter"/>
+					<include name="search"/>
+				</methods>
+			</class>
+			</classes>
+	</test> <!-- Test -->
+</suite>

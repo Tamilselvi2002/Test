@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="mentor.ListenerAll">
+		</listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+		
+		  <class name="mentor.DashBoard">
+				<methods>
+				<include name="clickDashboard"/>
+				<include name="clickall"/>	
+				<exclude name="Treatment"/>
+				<include name="clickvisit"/>	
+				<include name="Edit"/>
+				<exclude name="save"/>						
+				<include name="back"/>								
+				<exclude name="Approve" />
+				<exclude name="Resubmit" />
+				</methods>
+			</class>
+			
+		 <class name="mentor.Resubmission">
+			  <methods>
+                 <include name="move"/>
+                 <include name="clickall"/>
+                 <include name="sub"/>
+                 <include name="visit"/>
+                 <include name="locate"/>
+                 <include name="proficiency"/>
+               </methods>
+		 </class>
+			
+		<class name="mentor.Family">
+			  <methods>
+					<include name="clickfamily" />
+					<include name="viewclick" />
+					<include name="Transferclose" />
+					<include name="Transfersubmit" />
+					<include name="area"/>
+					<include name="studentclick" />
+					<include name="proficiencyclick" />
+					<exclude name="download" />
+					<include name="search" />
+			  </methods>
+		 </class>
+		 
+		 <class name="mentor.FamilyMember">
+			  <methods>
+					<include name="action" />
+					<include name="viewButton" />
+			    	<include name="student" />
+					<include name="area" />
+					<include name="search2" />
+					<include name="download2" />
+			  </methods>
+		 </class>
+		  <class name="mentor.StudentModule">
+			  <methods>
+					<include name="clickstudent" />
+					<include name="addsubmit" />
+					<include name="addcancel"/>
+					<include name="editsubmit"/>
+					<include name="editcancel"/>
+					<include name="UpdateProficiency"/>
+					<include name="CancelProficiency"/>
+					<include name="Uploadsubmit"/>
+					<include name="Uploadcancel"/>
+				    <include name="archievestudent"/>
+					<include name="proficiencyfilter"/>
+					<include name="search"/>
+			  </methods>
+		 </class>
+		 <class name="mentor.VisitModule">
+			  <methods>
+                 <include name="move"/>
+                 <include name="calendarwithCancelbutton"/>
+                 <include name="calendarwithOkbutton"/>
+                 <include name="prof"/>
+                 <include name="visit"/>
+                 <include name="visitStatus"/>
+                 <include name="search1"/>
+                 <include name="download1"/>
+               </methods>
+		 </class>
+		 <class name="mentor.Ashaworker">
+			 <methods>
+		        <include name="launch" />
+				<include name="error" />
+				<include name="add" />
+				<include name="cancel" />
+				<include name="save" />
+				<include name="success" />
+				<include name="edit" />
+				<include name="delete" />
+				<include name="totalashaworker" />
+		      </methods>
+		 </class>
+		 
+		 <class name="mentor.Treatment">
+			  <methods>
+                 <include name="treat"/>
+                 <include name="print"/>
+                 <exclude name="view"/>
+                 <include name="search"/>
+                 <include name="download"/>
+               </methods>
+		 </class>
+		 
+		 <class name="mentor.MorbidityModule">
+              <methods>
+				<include name="clickmorbidity"/>
+				<include name="clickview"/>	
+				<include name="totalmember"/>	
+				<include name="download"/>						
+				<include name="area"/>
+				<include name="proficiency" />
+				<include name="Visit" />
+				<include name="search" />
+		      </methods>
+	     </class>
+	     <class name="mentor.Archieve">
+			  <methods>
+			          <include name="achievelist"/>
+			  </methods>
+		</class>
+			
+			
+	    <class name="mentor.Report">
+			 <methods>
+                 <include name="action"/>
+                 <include name="fromDate"/>
+                 <include name="toDate"/>
+                 <include name="report"/>
+                 <include name="download"/>
+                 <include name="error1"/>
+              </methods>
+		</class>
+		 
+		<class name="mentor.Profile">
+			 <methods>
+                 <include name="clickprofile"/>
+                
+              </methods>
+		</class>
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
